@@ -8,7 +8,10 @@
 /* Main Styles */
     /* 
         Heaeder Element
-        -
+        - Centers Text
+        - Changes Background Color
+        - Adds Solid Colored Border
+        - Changes Margins
     */
         header{
             text-align: center;
@@ -20,7 +23,10 @@
 
     /* 
         Footer Element
-        -
+        - Centers Text
+        - Changes Background Color
+        - Adds Solid Colored Border
+        - Changes Margins
     */
         footer{
             text-align: center;
@@ -32,7 +38,7 @@
 
     /*
         HTML Element
-        - 
+        - Changes Background Color
     */
         html{
             background-color: rgb(41, 149, 192);
@@ -40,7 +46,11 @@
 
     /*
         Article Element
-        - 
+        - Adds Background Color
+        - Adds Solid Colored Border
+        - Changes Margins
+        - Changes Text Color
+        - Increases Font Size
     */
         article{
             background-color: rgb(122, 97, 68);
@@ -55,7 +65,18 @@
 
     /*
         CapImgCollection + Individual CapImg Elements
-        - 
+        - Empty Content
+        - Changes Display To Table
+        - Clears Both
+
+        - Makes All Images Float
+        - Gives All Images A Width of 35%
+        - Changes Right Margin
+        - Adds Background Color
+        - Changes Bottom Margin
+        - Adds Padding
+
+        - Changes Left Margin
     */
         .capimgCollection:after { 
             content: ""; 
@@ -65,26 +86,36 @@
 
         .capimg1, .capimg2, .capimg3, .capimg4 {
             float:left;
-            width:40%;
-            margin-right:2px;
+            width:35%;
+            margin-right:.5%;
             background-color: rgb(122, 97, 68);
             border: 2px solid rgb(78, 62, 44);
             color: rgb(255, 225, 192);
             margin-bottom: 5px;
-            padding-left: 5px;
-            padding-right: 5px;
+            padding: 8px;
         }
 
         .capimg1, .capimg3{
-            margin-left: 8%;
+            margin-left: 14.5%;
         }
 
     /*
         H2 Element
-        - 
+        - Centers Text
     */
         h2{
             text-align: center;
+        }
+    
+    /*
+        Img Element
+        - Adjusts Left Margin
+        - Adds Solid Border With Color
+    */
+        img{
+            width: 60%;
+            margin-left: 20%;
+            border: 2px solid rgb(78, 62, 44);
         }
 
 /* Responsive Styles */
@@ -92,5 +123,9 @@
     .capimg1, .capimg2, .capimg3, .capimg4 {
         width: 70%;
         margin-left: 13.5%;
+    }
+
+    article{
+        text-align: center;
     }
 }
