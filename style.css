@@ -1,0 +1,96 @@
+/*
+    Assignment: Responsive Travel
+    Author: Dagan Fitzsimmons
+    Date:   7/2/2023
+    Filename: style.css
+*/
+
+/* Main Styles */
+    /* 
+        Heaeder Element
+        -
+    */
+        header{
+            text-align: center;
+            background-color: rgb(255, 237, 187);
+            border: 2px solid rgb(233, 216, 169);
+            margin: 15px;
+            margin-bottom: 15px;
+        }
+
+    /* 
+        Footer Element
+        -
+    */
+        footer{
+            text-align: center;
+            background-color: rgb(255, 237, 187);
+            border: 2px solid rgb(233, 216, 169);
+            margin: 15px;
+            margin-top: 15px;
+        }
+
+    /*
+        HTML Element
+        - 
+    */
+        html{
+            background-color: rgb(41, 149, 192);
+        }
+
+    /*
+        Article Element
+        - 
+    */
+        article{
+            background-color: rgb(122, 97, 68);
+            border: 2px solid rgb(78, 62, 44);
+            margin: 2px;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding: .5%;
+            color: rgb(255, 225, 192);
+            font-size: larger;
+        }
+
+    /*
+        CapImgCollection + Individual CapImg Elements
+        - 
+    */
+        .capimgCollection:after { 
+            content: ""; 
+            display: table;
+            clear: both; 
+        }
+
+        .capimg1, .capimg2, .capimg3, .capimg4 {
+            float:left;
+            width:40%;
+            margin-right:2px;
+            background-color: rgb(122, 97, 68);
+            border: 2px solid rgb(78, 62, 44);
+            color: rgb(255, 225, 192);
+            margin-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .capimg1, .capimg3{
+            margin-left: 8%;
+        }
+
+    /*
+        H2 Element
+        - 
+    */
+        h2{
+            text-align: center;
+        }
+
+/* Responsive Styles */
+@media screen and (max-width:568px) {
+    .capimg1, .capimg2, .capimg3, .capimg4 {
+        width: 70%;
+        margin-left: 13.5%;
+    }
+}
